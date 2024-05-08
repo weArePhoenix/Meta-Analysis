@@ -17,7 +17,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={cn(inter.className, "w-full h-screen")}>
+            <body
+                className={cn(
+                    inter.className,
+                    "w-full h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-yellow-300 to-orange-600"
+                )}
+            >
                 {children}
             </body>
         </html>
